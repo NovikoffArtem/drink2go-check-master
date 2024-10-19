@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+img {
+  display: block;
+}
+
+
 // /* здесь используйте глобальные селекторы img, body, html и так далее */
 // .checkbox__label {
 //   position: relative;

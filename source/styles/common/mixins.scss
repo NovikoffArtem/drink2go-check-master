@@ -1,0 +1,21 @@
+@mixin font-face ($font-family, $font-style, $font-weight, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: $font-src;
+    font-display: swap;
+  }
+}
+
+@mixin link-reset ($link-color) {
+  text-decoration: none;
+  color: $link-color;
+  text-transform: uppercase;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

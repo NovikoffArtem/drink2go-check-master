@@ -1,0 +1,20 @@
+.header-nav__list {
+  @include list-reset;
+
+  // width: 100%;
+}
+
+.header-nav__link {
+@include link-reset ($base-black);
+
+display: block;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 9px 139px;
+}
+
+.header-nav__link::after {
+  content: "";
+  position: absolute;
+}
