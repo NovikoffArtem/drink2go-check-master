@@ -1,0 +1,9 @@
+.button {
+  @include link-reset($base-black);
+
+  font-family: $primary-font;
+  text-align: center;
+  border: none;
+  // padding: 10px;
+  transition: background-color 200ms ease-in-out;
+}
