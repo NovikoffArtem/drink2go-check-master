@@ -1,0 +1,48 @@
+.price__range-slider {
+  width: 280px;
+  height: 24px;
+  background-color: $base-grey;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    margin-bottom: 22px;
+  }
+}
+
+.price__field-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+
+  @media (min-width: $tablet-width) {
+    gap: 48px;
+  }
+}
+
+.price__field {
+  width: 118px;
+  font-family: $primary-font;
+  color: $base-black;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 6px 10px;
+  background-color: $base-white;
+  border: 2px solid $alt-primary-lighter;
+  border-radius: 4px;
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+}

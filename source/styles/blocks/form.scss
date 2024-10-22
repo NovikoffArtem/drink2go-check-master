@@ -1,0 +1,52 @@
+.form__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__price {
+  margin-bottom: 30px;
+}
+
+.form__filter {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+
+.form__button--apply {
+  @media (min-width: $desktop-width) {
+    padding: 8px 27px;
+  }
+}

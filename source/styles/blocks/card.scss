@@ -1,0 +1,78 @@
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+    width: 349px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px;
+    width: 317px;
+  }
+}
+
+.card__image-container {
+  padding-top: 20px;
+  align-self: center;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.card__heading {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 9px;
+  }
+}
+
+.card__description {
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.card__order-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  display: block;
+}
+
+.card__order {
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 46px;
+}
+
+.card__order::before {
+  content: "";
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 20px;
+  background: url("../../icons/basket-order.svg") center no-repeat;
+}

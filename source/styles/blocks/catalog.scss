@@ -1,0 +1,101 @@
+.catalog {
+  background-color: $bg-lightest-grey;
+}
+.catalog__wrapper {
+  padding: 52px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 132px 20px 90px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 132px 40px 120px;
+    max-width: 1600px;
+  }
+}
+
+.catalog__form-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.catalog__badge {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.catalog__heading {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__result-sorting {
+  display: flex;
+  align-items: baseline;
+  padding-top: 3px;
+  padding-left: 1px;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.catalog__result-sorting h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.catalog__sorting {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-primary;
+  width: 165px;
+  padding: 4px 5px;
+  font-family: $primary-font;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.catalog__item:hover {
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+.catalog__desktop-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 30px;
+  }
+}
