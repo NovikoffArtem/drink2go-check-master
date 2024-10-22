@@ -70,7 +70,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    display: flex;
+    justify-self: start;
   }
 }
 
