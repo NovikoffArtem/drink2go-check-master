@@ -1,0 +1,151 @@
+.hero-section__wrapper {
+  background-color: $bg-flat-white;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $bg-flat-white 640px, $base-white 640px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $bg-flat-white;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.hero-section__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    min-height: 714px;
+    text-align: left;
+  }
+}
+
+.hero-section__image {
+  margin: 20px auto 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
+}
+
+.hero-section__text-wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 120px 30px;
+  }
+}
+
+.hero-section__badge {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.hero-section__title {
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.hero-section__text {
+  padding: 0 20px;
+  margin: 0 auto 20px;
+  max-width: 400px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    max-width: 604px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+
+.hero-section__order-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    justify-content: start;
+  }
+}
+
+.hero-section__price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: row;
+}
+
+.hero-section__price--old {
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: $base-primary;
+}
+
+.hero-section__price--new {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+.hero-section__button-order {
+  font-size: 16px;
+  line-height: 24px;
+}

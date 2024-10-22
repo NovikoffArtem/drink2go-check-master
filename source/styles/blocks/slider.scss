@@ -1,0 +1,87 @@
+.slider {
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    min-height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 714px;
+  }
+}
+
+.slider__button--prev {
+  left: 0;
+  top: 0;
+}
+
+.slider__button--next {
+  right: 0;
+  top: 0;
+}
+
+.slider__button::before {
+  content: "";
+  width: 11px;
+  height: 20px;
+  position: absolute;
+  mask-image: url("../../icons/arrow-slider.svg");
+  background-color: $base-primary;
+  mask-position: center;
+  top: 319px;
+  transform: translate(50%);
+
+  @media (min-width: $tablet-width) {
+    top: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 348px;
+  }
+}
+
+.slider__button--next::before {
+  rotate: 180deg;
+}
+
+.slider__button--prev::before {
+  transform: translate(-50%);
+}
+
+.slider-pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+  }
+}
+
+.slider-pagination__button {
+  display: block;
+  width: 64px;
+  height: 4px;
+  background-color: $base-white;
+}
+
+.slider-pagination__button--current {
+  background-color: $base-primary;
+}

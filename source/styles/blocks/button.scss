@@ -1,9 +1,13 @@
 .button {
-  @include link-reset($base-black);
-
   font-family: $primary-font;
   text-align: center;
+  color: $base-white;
   border: none;
-  // padding: 10px;
+  border-radius: 4px;
   transition: background-color 200ms ease-in-out;
+}
+
+.button--primary {
+  padding: 8px 20px;
+  background-color: $base-primary;
 }

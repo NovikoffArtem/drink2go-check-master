@@ -1,13 +1,13 @@
 .header__logo {
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
 
     width: 82px;
     height: 36px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
 
     width: 170px;
     height: 36px;
@@ -19,6 +19,34 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+ }
+
+.header__logo-wrapper {
+  padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0;
+  }
+}
+
+.header__title--desktop {
+  font-size: 12px;
+  line-height: 16px;
+  width: 130px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .header__top-wrapper {
@@ -30,11 +58,15 @@
 
   @media (min-width: $tablet-width) {
     grid-template-rows: auto;
-    grid-template-columns: auto max(400px) auto;
+    grid-template-columns: auto max(400px) 130px;
     align-items: center;
-    margin: 0 auto;
-    gap: 100px;
+  }
 
+  @media (min-width: $desktop-width) {
+    grid-template-rows: auto;
+    grid-template-columns: auto 560px 260px;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -44,31 +76,37 @@
     grid-column: 2/3;
     grid-row: 1/2;
   }
-
 }
 
 .header__user-wrapper {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding-right: 60px;
+  padding-right: 70px;
   grid-column: 2/-1;
   grid-row: 1/2;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/-1;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 47px;
+    display: flex;
+    gap: 100px;
+  }
 }
 
 .header__link {
-  width: 28px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   padding: 20px;
   z-index: 200;
+  text-decoration: none;
 }
 
 .header__link::before {
@@ -76,16 +114,35 @@
   position: absolute;
   mask-position: center;
   background-color: $base-black;
+  width: 16px;
+  height: 16px;
 }
 
 .header__link--user::before {
   mask-image: url("../../icons/stack.svg#user");
-  width: 24px;
-  height: 20px;
+
+  @media (min-width: $desktop-width) {
+    left: -29px;
+  }
 }
 
 .header__link--basket::before {
   mask-image: url("../../icons/stack.svg#basket");
-  width: 24px;
-  height: 20px;
+
+  @media (min-width: $desktop-width) {
+    left: -36px;
+  }
+}
+
+.header__link-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 32px 20px;
+  }
 }

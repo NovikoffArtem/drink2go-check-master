@@ -6,12 +6,14 @@
   padding: 0;
   margin: 0;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
-    gap: 32px;
-    flex-wrap: wrap;
-max-width: 400px;
+    flex-flow: row wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    gap: 22px;
   }
 }
 
@@ -24,6 +26,33 @@ max-width: 400px;
   font-weight: 500;
   padding: 9px 5px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px;
+  }
+}
+
+.header-nav--opened .header-nav__link {
+  padding: 20px 10px;
+}
+
+.header-nav__link--current {
+  color: $base-primary;
+  position: relative;
+}
+
+.header-nav__link--current::after {
+  content: "";
+  height: 2px;
+  background-color: $base-primary;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .header-nav__toggle {
@@ -33,7 +62,7 @@ max-width: 400px;
   cursor: pointer;
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 12px;
   padding: 0;
 
   @media (min-width: $max-mobile-width) {
@@ -45,19 +74,18 @@ max-width: 400px;
   content: "";
   position: absolute;
   width: 16px;
-  height: 2px;
+  height: 1px;
   top: 20px;
   right: 10px;
   background-color: $base-black;
-  padding: 0;
-  box-shadow: 0 -8px 0 0 $base-black, 0 8px 0 0 $base-black;
+  box-shadow: 0 -5px 0 0 $base-black, 0 5px 0 0 $base-black;
 }
 
 .header-nav--opened .header-nav__toggle::after,
 .header-nav__toggle::before {
   content: "";
   position: absolute;
-  width: 24px;
+  width: 16px;
   height: 1px;
   background-color: $base-black;
   right: 10px;
@@ -67,34 +95,34 @@ max-width: 400px;
   transform: rotate(45deg);
 }
 
+.header-nav--opened .header-nav__toggle::before {
+  transform: rotate(-45deg);
+}
+
 .header-nav--closed .header-nav__list {
   @media (max-width: $max-mobile-width) {
     display: none;
   }
 }
 
-.header-nav--opened .header-nav__toggle::before {
-  transform: rotate(-45deg);
-}
-
 .header-nav--opened .header-nav__list {
   @media (max-width: $max-mobile-width) {
     position: absolute;
-}
+  }
 }
 
 .header-nav__item {
-  border-top: 1px solid #000;
+  border-top: 1px solid $base-secondary;
 
-  @media  (min-width: $tablet-width) {
-   border: none;
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 
 .header-nav__item:last-child {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $base-secondary;
 
-  @media  (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     border: none;
-   }
+  }
 }
