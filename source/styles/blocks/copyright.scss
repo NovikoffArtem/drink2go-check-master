@@ -6,6 +6,8 @@
   text-decoration: none;
   color: $base-grey;
   transition: color 200ms ease-in-out;
+  padding: 0 10px;
+  color: $base-grey;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
