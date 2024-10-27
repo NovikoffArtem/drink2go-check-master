@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     gap: 30px;
     margin-bottom: 17px;
-      }
+  }
 
   @media (min-width: $after-tablet) {
     justify-content: space-between;
@@ -20,7 +20,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     flex-wrap: wrap;
-}
+  }
 }
 
 .nav-footer__item {

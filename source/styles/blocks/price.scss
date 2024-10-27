@@ -1,17 +1,35 @@
-.price__range-slider {
+// .price__range-slider {
+//   // width: 280px;
+//   // height: 24px;
+//   // background-color: $base-grey;
+//   margin-bottom: 24px;
+
+//   @media (min-width: $tablet-width) {
+//     // width: 223px;
+//     margin-bottom: 20px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     // width: 318px;
+//     margin-bottom: 22px;
+//       }
+// }
+
+.price__slider-wrapper {
+  padding-top: 11px;
+  padding-bottom: 8px;
+  margin-bottom: 27px;
   width: 280px;
-  height: 24px;
-  background-color: $base-grey;
-  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     width: 223px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 10px 0;
+    margin-bottom: 25px;
     width: 318px;
-    margin-bottom: 22px;
   }
 }
 
@@ -45,4 +63,33 @@
   @media (min-width: $desktop-width) {
     width: 134px;
   }
+}
+
+.noui-target {
+  background-color: $alt-light-grey;
+  border: none;
+  height: 2px;
+}
+
+.noui-connect {
+  background-color: $base-primary;
+}
+
+.noui-horizontal .noui-handle {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  box-shadow: none;
+  border: 2px solid $base-primary;
+  top: -10px;
+}
+
+.noui-handle::after,
+.noui-handle::before {
+  display: none;
+}
+
+.noui-base {
+  width: calc(100% - 25px);
+  right: -7px;
 }

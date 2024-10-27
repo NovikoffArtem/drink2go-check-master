@@ -140,7 +140,9 @@
               <div class="form__filter">
                 <fieldset class="form__price form__fieldset price">
                   <legend class="form__title">Цена</legend>
-                  <div class="form__slider price__range-slider"></div>
+                  <div class="price__slider-wrapper">
+                    <div class="price__range-slider"></div>
+                  </div>
                   <div class="price__field-wrapper">
                     <label class="visually-hidden" for="price-low">от</label>
                     <input class="price__field price__field--low" type="number" placeholder="0" id="price-low"
@@ -464,6 +466,7 @@
         </svg>
       </a>
   </footer>
+  <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
