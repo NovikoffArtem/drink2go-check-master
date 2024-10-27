@@ -24,7 +24,7 @@
               <img src="images/logo.svg" alt="Логотип сайта" width="32" height="36">
             </picture>
           </a>
-          <p class="header__title header__title--desktop">Интернет-магазин
+          <p class="logo__title logo__title--header">Интернет-магазин
             кофейных напитков</p>
         </div>
         <div class="header__user-wrapper">
@@ -388,73 +388,81 @@
     </section>
   </main>
   <footer class="footer" data-test="footer">
-    <a class="footer__logo logo" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-desktop.svg" width="170"
-          height="36">
-        <img src="images/logo-tablet.svg" alt="Логотип сайта" width="82" height="36">
-      </picture>
-    </a>
-    <ul class="footer__social social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vk" href="#"><span class="visually-hidden">Мы в
-            контакте</span></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--pint" href="#"><span class="visually-hidden">Наша страница на
-            Пинтерест</span></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--ok" href="#"><span class="visually-hidden">Мы в
-            одноклассниках</span></a>
-      </li>
-    </ul>
-    <ul class="footer__nav nav-footer">
-      <li class="nav-footer__item">
-        <h3 class="nav-footer__heading">Интернет-магазин</h3>
-        <ul class="nav-footer__inner-list">
-          <li class="nav-footer__inner-item">
-            <a class="nav-footer__inner-link" href="#">Каталог</a>
-          </li>
-          <li class="nav-footer__inner-item">
-            <a class="nav-footer__inner-link" href="#">Доставка</a>
-          </li>
-          <li class="nav-footer__inner-item">
-            <a class="nav-footer__inner-link" href="#">Способы оплаты</a>
-          </li>
-          <li class="nav-footer__inner-item">
-            <a class="nav-footer__inner-link" href="#">О нас</a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-footer__item">
-        <h3 class="nav-footer__heading">Медиа</h3>
-        <ul class="nav-footer__inner-list">
-          <li class="nav-footer__inner-item">
-            <a class="nav-footer__inner-link" href="#">Блог</a>
-          </li>
-          <li class="nav-footer__inner-item">
-            <a class="nav-footer__inner-link" href="#">Информация для СМИ</a>
-          </li>
-          <li class="nav-footer__inner-item">
-            <a class="nav-footer__inner-link" href="#">Правовая информация</a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-footer__item contacts">
-        <div class="contacts__wrapper">
-          <h3 class="nav-footer__heading">Контакты</h3>
-          <p class="contacts__text">Санкт-Петербург, набережная реки Карповки, дом 5</p>
-          <a href="tel:+9999999999">+7 (999) 999-99-99</a>
+    <div class="footer__wrapper">
+      <div class="footer__social-wrapper">
+        <div class="footer__logo-wrapper">
+          <a class="footer__logo logo logo--footer" href="#">
+            <picture>
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-desktop.svg" width="170"
+                height="36">
+              <img src="images/logo-tablet.svg" alt="Логотип сайта" width="82" height="36">
+            </picture>
+          </a>
+          <p class="logo__title logo__title--footer">Интернет-магазин
+            кофейных напитков</p>
         </div>
-      </li>
-    </ul>
-    <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <p class="copyright__text">Разработано в HTML Academy</p>
-      <svg class="copyright__logo" width="9" height="12">
-        <use href="icons/stack.svg#academy-logo"></use>
-      </svg>
-    </a>
+        <ul class="footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk" href="#"><span class="visually-hidden">Мы в
+                контакте</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--pint" href="#"><span class="visually-hidden">Наша страница на
+                Пинтерест</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--ok" href="#"><span class="visually-hidden">Мы в
+                одноклассниках</span></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__nav nav-footer">
+        <li class="nav-footer__item">
+          <h3 class="nav-footer__heading">Интернет-магазин</h3>
+          <ul class="nav-footer__inner-list">
+            <li class="nav-footer__inner-item">
+              <a class="nav-footer__inner-link" href="#">Каталог</a>
+            </li>
+            <li class="nav-footer__inner-item">
+              <a class="nav-footer__inner-link" href="#">Доставка</a>
+            </li>
+            <li class="nav-footer__inner-item">
+              <a class="nav-footer__inner-link" href="#">Способы оплаты</a>
+            </li>
+            <li class="nav-footer__inner-item">
+              <a class="nav-footer__inner-link" href="#">О нас</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-footer__item">
+          <h3 class="nav-footer__heading">Медиа</h3>
+          <ul class="nav-footer__inner-list">
+            <li class="nav-footer__inner-item">
+              <a class="nav-footer__inner-link" href="#">Блог</a>
+            </li>
+            <li class="nav-footer__inner-item">
+              <a class="nav-footer__inner-link" href="#">Информация для СМИ</a>
+            </li>
+            <li class="nav-footer__inner-item">
+              <a class="nav-footer__inner-link" href="#">Правовая информация</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-footer__item contacts">
+          <div class="contacts__wrapper">
+            <h3 class="nav-footer__heading nav-footer__heading--contacts">Контакты</h3>
+            <p class="contacts__text contacts__text--adres">Санкт-Петербург, набережная реки Карповки, дом 5</p>
+            <a class="contacts__text contacts__text--phone" href="tel:+9999999999">+7 (999) 999-99-99</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__text">Разработано в HTML Academy</p>
+        <svg class="copyright__logo" width="12" height="16">
+          <use href="icons/stack.svg#academy-logo"></use>
+        </svg>
+      </a>
   </footer>
 </body>
 

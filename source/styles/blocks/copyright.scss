@@ -1,0 +1,36 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: $base-grey;
+  transition: color 200ms ease-in-out;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.copyright__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.copyright__logo {
+  fill: currentColor;
+}
+
+.copyright:hover,
+.copyright:focus-visible {
+  color: $base-primary;
+}
+
+.copyright:active {
+  color: $alt-primary-darker;
+}

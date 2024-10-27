@@ -1,0 +1,36 @@
+.logo {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.logo__title {
+  font-size: 12px;
+  line-height: 16px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__title--header {
+  width: 130px;
+}
+
+.logo__title--footer {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+
+}

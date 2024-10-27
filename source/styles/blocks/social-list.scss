@@ -1,0 +1,38 @@
+.social-list {
+  @include list-reset;
+
+  display: flex;
+  gap: 20px;
+}
+
+.social-list__link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.social-list__link::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: $base-grey;
+  mask-position: center;
+}
+
+.social-list__link--vk::before {
+  mask-image: url("../../icons/vk.svg");
+}
+
+.social-list__link--pint::before {
+  mask-image: url("../../icons/pinterest.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.social-list__link--ok::before {
+  mask-image: url("../../icons/ok.svg");
+}
