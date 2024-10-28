@@ -59,47 +59,131 @@
   </header>
   <main class="main">
     <section class="hero-section" data-test="hero">
-      <div class="hero-section__wrapper">
-        <div class="hero-section__content slider">
-          <button class="slider__button slider__button--prev slider-button-prev" type="button"><span
-              class="visually-hidden">Предыдущий
-              слайд</span></button>
-          <button class="slider__button slider__button--next slider-button-next" type="button"><span
-              class="visually-hidden">Следующий
-              слайд</span></button>
-          <picture>
-            <source media="(min-width: 1440px)" type="image/webp"
-              srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x" width="600" height="600">
-            <source media="(min-width: 768px)" type="image/webp"
-              srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x" width="476"
-              height="476">
-            <source type="image/webp" srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x"
-              width="280" height="280">
-            <source media="(min-width: 1440px)" type="image/png"
-              srcset="images/hero-image@1x.png 1x, images/hero-image@2x.png 2x" width="600" height="600">
-            <source media="(min-width: 768px)" type="image/png"
-              srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="476" height="476">
-            <img class="hero-section__image" src="images/hero-image-mobile@1x.png"
-              srcset="images/hero-image-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
-          </picture>
-          <div class="hero-section__text-wrapper">
-            <p class="hero-section__badge badge">Новинка!</p>
-            <h1 class="hero-section__title">Декаф Флэт Уайт</h1>
-            <p class="hero-section__text">Свежесваренный кофе без кофеина из Эфиопии
-              с&nbsp;натуральным фермерским молоком — то, что нужно
-              для расслабления после тяжёлого рабочего дня</p>
-            <div class="hero-section__order-wrapper">
-              <div class="hero-section__price-wrapper">
-                <span class="hero-section__price hero-section__price--old">295₽</span>
-                <span class="hero-section__price hero-section__price--new">225₽</span>
+      <div class="hero-section__slider slider">
+        <button class="slider__button slider__button--prev slider-button-prev" type="button"><span
+            class="visually-hidden">Предыдущий
+            слайд</span></button>
+        <button class="slider__button slider__button--next slider-button-next" type="button"><span
+            class="visually-hidden">Следующий
+            слайд</span></button>
+        <div class="hero-section__slide  active">
+          <div class="hero-section__content">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp"
+                srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x" width="600" height="600">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x" width="476"
+                height="476">
+              <source type="image/webp" srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x"
+                width="280" height="280">
+              <source media="(min-width: 1440px)" type="image/png"
+                srcset="images/hero-image@1x.png 1x, images/hero-image@2x.png 2x" width="600" height="600">
+              <source media="(min-width: 768px)" type="image/png"
+                srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="476" height="476">
+              <img class="hero-section__image" src="images/hero-image-mobile@1x.png"
+                srcset="images/hero-image-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
+            </picture>
+            <div class="hero-section__text-wrapper">
+              <p class="hero-section__badge badge">Новинка!</p>
+              <h1 class="hero-section__title">Декаф Флэт Уайт</h1>
+              <p class="hero-section__text">Свежесваренный кофе без кофеина из Эфиопии
+                с&nbsp;натуральным фермерским молоком — то, что нужно
+                для расслабления после тяжёлого рабочего дня</p>
+              <div class="hero-section__order-wrapper">
+                <div class="hero-section__price-wrapper">
+                  <span class="hero-section__price hero-section__price--old">295₽</span>
+                  <span class="hero-section__price hero-section__price--new">225₽</span>
+                </div>
+                <button class="hero-section__button-order button button--primary" type="button">Заказать</button>
               </div>
-              <button class="hero-section__button-order button button--primary" type="button">Заказать</button>
+            </div>
+            <div class="slider-pagination">
+              <div class="slider-pagination__button slider-pagination__button--current"></div>
+              <div class="slider-pagination__button"></div>
+              <div class="slider-pagination__button"></div>
             </div>
           </div>
-          <div class="slider-pagination">
-            <div class="slider-pagination__button slider-pagination__button--current"></div>
-            <div class="slider-pagination__button"></div>
-            <div class="slider-pagination__button"></div>
+        </div>
+        <div class="hero-section__slide hero-section__slide--lavender l">
+          <div class="hero-section__content slider">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp"
+                srcset="images/hero-image-lavender@1x.webp 1x, images/hero-image-lavender@2x.webp 2x" width="600"
+                height="600">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="images/hero-image-lavender-tablet@1x.webp 1x, images/hero-image-lavender-tablet@2x.webp 2x"
+                width="476" height="476">
+              <source type="image/webp"
+                srcset="images/hero-image-lavender-mobile@1x.webp 1x, images/hero-image-lavender-mobile@2x.webp 2x"
+                width="280" height="280">
+              <source media="(min-width: 1440px)" type="image/png"
+                srcset="images/hero-image-lavender@1x.png 1x, images/hero-image-lavender@2x.png 2x" width="600"
+                height="600">
+              <source media="(min-width: 768px)" type="image/png"
+                srcset="images/hero-image-lavender-tablet@1x.png 1x, images/hero-image-lavender-tablet@2x.png 2x"
+                width="476" height="476">
+              <img class="hero-section__image" src="images/hero-image-lavender-mobile@1x.png"
+                srcset="images/hero-image-lavender-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте">
+            </picture>
+            <div class="hero-section__text-wrapper">
+              <p class="hero-section__badge badge">Новинка!</p>
+              <h1 class="hero-section__title">Лавандовый Латте</h1>
+              <p class="hero-section__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+                лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="hero-section__order-wrapper">
+                <div class="hero-section__price-wrapper">
+                  <span class="hero-section__price hero-section__price--old">295₽</span>
+                  <span class="hero-section__price hero-section__price--new">225₽</span>
+                </div>
+                <button class="hero-section__button-order button button--primary" type="button">Заказать</button>
+              </div>
+            </div>
+            <div class="slider-pagination">
+              <div class="slider-pagination__button"></div>
+              <div class="slider-pagination__button slider-pagination__button--current"></div>
+              <div class="slider-pagination__button"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-section__slide hero-section__slide--espresso">
+          <div class="hero-section__content slider">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp"
+                srcset="images/hero-image-espresso@1x.webp 1x, images/hero-image-espresso@2x.webp 2x" width="600"
+                height="600">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="images/hero-image-espresso-tablet@1x.webp 1x, images/hero-image-espresso-tablet@2x.webp 2x"
+                width="476" height="476">
+              <source type="image/webp"
+                srcset="images/hero-imagehero-image-espresso-mobile@1x.webp 1x, images/hero-image-espresso-mobile@2x.webp 2x"
+                width="280" height="280">
+              <source media="(min-width: 1440px)" type="image/png"
+                srcset="images/hero-image-espresso@1x.png 1x, images/hero-image-espresso@2x.png 2x" width="600"
+                height="600">
+              <source media="(min-width: 768px)" type="image/png"
+                srcset="images/hero-image-espresso-tablet@1x.png 1x, images/hero-image-espresso-tablet@2x.png 2x"
+                width="476" height="476">
+              <img class="hero-section__image" src="images/hero-image-espresso-mobile@1x.png"
+                srcset="images/hero-image-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо">
+            </picture>
+            <div class="hero-section__text-wrapper">
+              <p class="hero-section__badge badge">Новинка!</p>
+              <h1 class="hero-section__title">Тройной Эспрессо</h1>
+              <p class="hero-section__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+                Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="hero-section__order-wrapper">
+                <div class="hero-section__price-wrapper">
+                  <span class="hero-section__price hero-section__price--old">295₽</span>
+                  <span class="hero-section__price hero-section__price--new">225₽</span>
+                </div>
+                <button class="hero-section__button-order button button--primary" type="button">Заказать</button>
+              </div>
+            </div>
+            <div class="slider-pagination">
+              <div class="slider-pagination__button"></div>
+              <div class="slider-pagination__button"></div>
+              <div class="slider-pagination__button slider-pagination__button--current"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -136,7 +220,8 @@
         <h2 class="catalog__heading main-heading">Каталог кофейных напитков</h2>
         <div class="catalog__desktop-wrapper">
           <div class="catalog__form-wrapper">
-            <form class="catalog__form form" action="https://echo.htmlacademy.ru/courses" method="get" id="change-coffe">
+            <form class="catalog__form form" action="https://echo.htmlacademy.ru/courses" method="get"
+              id="change-coffe">
               <div class="form__filter">
                 <fieldset class="form__price form__fieldset price">
                   <legend class="form__title">Цена</legend>
@@ -173,7 +258,8 @@
                     </li>
                     <li class="radiobuttons__item">
                       <label class="radiobuttons__label">
-                        <input class="visually-hidden radiobuttons__control-input" type="radio" name="milk" value="plant">
+                        <input class="visually-hidden radiobuttons__control-input" type="radio" name="milk"
+                          value="plant">
                         <span class="radiobuttons__heading form__heading">Только растительное</span>
                         <span class="radiobuttons__control-mark"></span>
                       </label>
@@ -303,7 +389,8 @@
                   <picture>
                     <source type="image/webp" srcset="images/red@1x.webp 1x, images/red@2x.webp 2x" width="130"
                       height="188">
-                    <img src="images/red@1x.png" srcset="images/red@2x.png" alt="Декаф флэт уайт" width="130" height="188">
+                    <img src="images/red@1x.png" srcset="images/red@2x.png" alt="Декаф флэт уайт" width="130"
+                      height="188">
                   </picture>
                 </a>
                 <h3 class="card__heading">Декаф флэт уайт</h3>
@@ -352,16 +439,16 @@
             <div class="catalog__pagination pagination">
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <button class="pagination__button pagination__button--prev pagination__arrow button" type="button"><span
-                      class="pagination__tablet">Назад</span></button>
+                  <button class="pagination__button pagination__button--prev pagination__arrow button"
+                    type="button"><span class="pagination__tablet">Назад</span></button>
                 </li>
                 <li class="pagination__item"><button class="pagination__button button">1</button></li>
                 <li class="pagination__item"><button
                     class="pagination__button pagination__button--current button">2</button></li>
                 <li class="pagination__item"><button class="pagination__button button">3</button></li>
                 <li class="pagination__item">
-                  <button class="pagination__button pagination__button--next pagination__arrow button" type="button"><span
-                      class="pagination__tablet">Вперёд</span></button>
+                  <button class="pagination__button pagination__button--next pagination__arrow button"
+                    type="button"><span class="pagination__tablet">Вперёд</span></button>
                 </li>
               </ul>
             </div>
@@ -459,14 +546,14 @@
         </li>
       </ul>
     </div>
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="copyright__text">Разработано в HTML Academy</p>
-        <svg class="copyright__logo" width="12" height="16">
-          <use href="icons/stack.svg#academy-logo"></use>
-        </svg>
-      </a>
+    <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <p class="copyright__text">Разработано в HTML Academy</p>
+      <svg class="copyright__logo" width="12" height="16">
+        <use href="icons/stack.svg#academy-logo"></use>
+      </svg>
+    </a>
   </footer>
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/hero-slider.js"></script>
 </body>
 
 </html>

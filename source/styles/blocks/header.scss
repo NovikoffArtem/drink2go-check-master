@@ -12,9 +12,6 @@
 }
 
 .header__logo-wrapper {
-
-  // padding-left: 20px;
-
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
@@ -26,8 +23,6 @@
 .header__top-wrapper {
   display: flex;
   justify-content: space-between;
-  // grid-template-columns: repeat(2, auto);
-  // grid-template-rows: 60px auto;
   align-items: center;
   padding: 10px 20px;
 
@@ -60,7 +55,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin-left: 50px;
+  margin-left: calc(100% - 230px);
 
   @media (min-width: $tablet-width) {
     grid-column: 3/-1;

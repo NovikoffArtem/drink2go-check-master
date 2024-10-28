@@ -1,7 +1,3 @@
-.slider {
-  position: relative;
-}
-
 .slider__button {
   position: absolute;
   width: 20px;
@@ -10,6 +6,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 200;
 
 
   @media (min-width: $tablet-width) {
