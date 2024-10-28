@@ -1,5 +1,6 @@
 .header-nav__list {
   @include list-reset;
+
   z-index: 60;
   width: 100%;
   background-color: $base-white;
@@ -108,6 +109,8 @@
 .header-nav--opened .header-nav__list {
   @media (max-width: $max-mobile-width) {
     position: absolute;
+    left: 0;
+    top: 60px;
   }
 }
 
@@ -125,4 +128,21 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+}
+
+.header-nav--nojs .header-nav__toggle {
+  display: none;
+}
+
+.header-nav--nojs .header-nav__list {
+  @media (max-width: $max-mobile-width) {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+}
+
+.header-nav--nojs .header-nav__link {
+  padding: 20px 10px;
 }
