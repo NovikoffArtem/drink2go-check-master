@@ -4,7 +4,7 @@
   color: $base-white;
   border: none;
   border-radius: 4px;
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
   cursor: pointer;
 }
 
@@ -25,4 +25,28 @@
   @media (min-width: $desktop-width) {
     padding: 8px 34px;
   }
+}
+
+.button--secondary:hover,
+.button--secondary:focus-visible {
+  color: $base-white;
+  background-color: $alt-primary-lighter;
+}
+
+.button--secondary:active {
+  color: $base-white;
+  background-color: $alt-primary-darker;
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  background-color: $alt-primary-lighter;
+}
+
+.button--primary:active {
+  background-color: $alt-primary-darker;
+}
+
+.button--primary:disabled {
+  background-color: $base-grey;
 }

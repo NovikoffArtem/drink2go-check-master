@@ -86,4 +86,14 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   color: $base-black;
+  transition: all 200ms ease-in;
+}
+
+.nav-footer__inner-link:hover,
+.nav-footer__inner-link:focus-visible {
+  color: $alt-primary-lighter;
+}
+
+.nav-footer__inner-link:active {
+  color: $alt-primary-darker;
 }

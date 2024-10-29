@@ -5,7 +5,6 @@
   gap: 5px;
   text-decoration: none;
   color: $base-grey;
-  transition: color 200ms ease-in-out;
   padding: 0 10px;
 
   @media (min-width: $desktop-width) {
@@ -33,5 +32,13 @@
 }
 
 .copyright:active {
+  color: $alt-primary-darker;
+}
+
+.copyright:hover .copyright__text--link {
+  color: $base-primary;
+}
+
+.copyright:active .copyright__text--link {
   color: $alt-primary-darker;
 }

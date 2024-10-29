@@ -12,6 +12,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
 }
 
 .social-list__link::before {
@@ -21,6 +23,7 @@
   position: absolute;
   background-color: $base-grey;
   mask-position: center;
+  transition: all 200ms ease-in-out;
 }
 
 .social-list__link--vk::before {
@@ -35,4 +38,16 @@
 
 .social-list__link--ok::before {
   mask-image: url("../../icons/ok.svg");
+}
+
+.social-list__link:hover::before {
+  background-color: $base-primary;
+}
+
+.social-list__link:hover {
+  background-color: $base-secondary;
+}
+
+.social-list__link:active {
+  background-color: #7859cf40;
 }

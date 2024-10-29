@@ -50,12 +50,19 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-left: 0;
+    align-items: center;
+    margin-bottom: 20px;
   }
 }
 
 .catalog__result-sorting h2 {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog__sorting {
@@ -68,6 +75,15 @@
   width: 165px;
   padding: 4px 5px;
   font-family: $primary-font;
+  appearance: none;
+  background-image: url("../../icons/arrow-select.svg");
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: right 11px top 40%;
+}
+
+.catalog__sorting:hover {
+  background-color: $base-secondary;
 }
 
 .catalog__list {

@@ -27,6 +27,7 @@
   font-weight: 500;
   padding: 9px 5px;
   text-align: center;
+  transition: all 200ms ease;
 
   @media (min-width: $tablet-width) {
     padding: 32px 21px;
@@ -37,6 +38,16 @@
   }
 }
 
+.header-nav__link:hover,
+.header-nav__link:focus-visible {
+  color: $base-primary;
+}
+
+.header-nav__link:active {
+  background-color: $base-secondary;
+  color: $base-black;
+}
+
 .header-nav--opened .header-nav__link {
   padding: 20px 10px;
 }
@@ -44,6 +55,7 @@
 .header-nav__link--current {
   color: $base-primary;
   position: relative;
+  pointer-events: none;
 }
 
 .header-nav__link--current::after {
@@ -65,10 +77,15 @@
   top: 10px;
   right: 12px;
   padding: 0;
+  transition: all 200ms ease-in-out;
 
   @media (min-width: $max-mobile-width) {
     display: none;
   }
+}
+
+.header-nav__toggle:active {
+  background-color: $base-secondary;
 }
 
 .header-nav--closed .header-nav__toggle::before {

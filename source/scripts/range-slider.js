@@ -11,7 +11,7 @@ export const setupSlider = () => {
 
   if (rangeSlider) {
     noUiSlider.create(rangeSlider, {
-      start: [0, 900],
+      start: [0, 1000],
       connect: true,
       step: 1,
       range: {

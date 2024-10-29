@@ -40,6 +40,7 @@
   inset: 0;
   background-color: $base-grey;
   border-radius: 24px;
+  border: 2px solid $base-grey;
 }
 
 .checkbox__slider::before {
@@ -47,14 +48,14 @@
   content: "";
   height: 20px;
   width: 20px;
-  left: 2px;
-  bottom: 2px;
   background-color: $base-white;
   border-radius: 50%;
+  transition: all 200ms;
 }
 
 .checkbox__control:checked + .checkbox__slider {
   background-color: $base-primary;
+  border-color: $base-primary;
 }
 
 .checkbox__control:checked + .checkbox__slider::before {
@@ -67,4 +68,22 @@
 
 .checkbox__control:disabled + .checkbox__slider {
   background-color: $alt-light-grey;
+  border-color: $alt-light-grey;
+}
+
+.checkbox__label:hover .checkbox__slider,
+.checkbox__label:focus-visible .checkbox__slider {
+  border-color: $base-primary;
+  background-color: #7859cf40;
+}
+
+.checkbox__label:hover .checkbox__control:disabled + .checkbox__slider {
+  background-color: $alt-light-grey;
+  border-color: $alt-light-grey;
+  cursor: auto;
+}
+
+.checkbox__control:focus-visible ~ .checkbox__slider {
+  background-color: #7859cf40;
+  border-color: $base-primary;
 }

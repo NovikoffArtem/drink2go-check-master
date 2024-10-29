@@ -66,7 +66,9 @@
         <button class="slider__button slider__button--next slider-button-next" type="button"><span
             class="visually-hidden">Следующий
             слайд</span></button>
-        <div class="hero-section__slide  active">
+        <div class="slider-pagination">
+        </div>
+        <div class="hero-section__slide hero-section__slide--white hero-section__slide--active">
           <div class="hero-section__content">
             <picture>
               <source media="(min-width: 1440px)" type="image/webp"
@@ -74,12 +76,14 @@
               <source media="(min-width: 768px)" type="image/webp"
                 srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x" width="476"
                 height="476">
-              <source type="image/webp" srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x"
-                width="280" height="280">
+              <source type="image/webp"
+                srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x" width="280"
+                height="280">
               <source media="(min-width: 1440px)" type="image/png"
                 srcset="images/hero-image@1x.png 1x, images/hero-image@2x.png 2x" width="600" height="600">
               <source media="(min-width: 768px)" type="image/png"
-                srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="476" height="476">
+                srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="476"
+                height="476">
               <img class="hero-section__image" src="images/hero-image-mobile@1x.png"
                 srcset="images/hero-image-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
             </picture>
@@ -97,14 +101,9 @@
                 <button class="hero-section__button-order button button--primary" type="button">Заказать</button>
               </div>
             </div>
-            <div class="slider-pagination">
-              <div class="slider-pagination__button slider-pagination__button--current"></div>
-              <div class="slider-pagination__button"></div>
-              <div class="slider-pagination__button"></div>
-            </div>
           </div>
         </div>
-        <div class="hero-section__slide hero-section__slide--lavender l">
+        <div class="hero-section__slide hero-section__slide--lavender">
           <div class="hero-section__content slider">
             <picture>
               <source media="(min-width: 1440px)" type="image/webp"
@@ -137,11 +136,6 @@
                 </div>
                 <button class="hero-section__button-order button button--primary" type="button">Заказать</button>
               </div>
-            </div>
-            <div class="slider-pagination">
-              <div class="slider-pagination__button"></div>
-              <div class="slider-pagination__button slider-pagination__button--current"></div>
-              <div class="slider-pagination__button"></div>
             </div>
           </div>
         </div>
@@ -178,11 +172,6 @@
                 </div>
                 <button class="hero-section__button-order button button--primary" type="button">Заказать</button>
               </div>
-            </div>
-            <div class="slider-pagination">
-              <div class="slider-pagination__button"></div>
-              <div class="slider-pagination__button"></div>
-              <div class="slider-pagination__button slider-pagination__button--current"></div>
             </div>
           </div>
         </div>
@@ -233,7 +222,7 @@
                     <input class="price__field price__field--low" type="number" placeholder="0" id="price-low"
                       name="price-low">
                     <label class="visually-hidden" for="price-high">до</label>
-                    <input class="price__field price__field--high" type="number" placeholder="900" id="price-high"
+                    <input class="price__field price__field--high" type="number" placeholder="1000" id="price-high"
                       name="price-high">
                   </div>
                 </fieldset>
@@ -439,15 +428,15 @@
             <div class="catalog__pagination pagination">
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <button class="pagination__button pagination__button--prev pagination__arrow button"
+                  <button class="button--secondary pagination__button pagination__button--prev pagination__arrow button"
                     type="button"><span class="pagination__tablet">Назад</span></button>
                 </li>
-                <li class="pagination__item"><button class="pagination__button button">1</button></li>
+                <li class="pagination__item"><button class="button--secondary pagination__button button">1</button></li>
                 <li class="pagination__item"><button
-                    class="pagination__button pagination__button--current button">2</button></li>
-                <li class="pagination__item"><button class="pagination__button button">3</button></li>
+                    class="button--secondary pagination__button pagination__button--current button">2</button></li>
+                <li class="pagination__item"><button class="button--secondary pagination__button button">3</button></li>
                 <li class="pagination__item">
-                  <button class="pagination__button pagination__button--next pagination__arrow button"
+                  <button class="button--secondary pagination__button pagination__button--next pagination__arrow button"
                     type="button"><span class="pagination__tablet">Вперёд</span></button>
                 </li>
               </ul>
@@ -547,7 +536,7 @@
       </ul>
     </div>
     <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <p class="copyright__text">Разработано в HTML Academy</p>
+      <p class="copyright__text">Разработано в <span class="copyright__text copyright__text--link">HTML Academy</span></p>
       <svg class="copyright__logo" width="12" height="16">
         <use href="icons/stack.svg#academy-logo"></use>
       </svg>

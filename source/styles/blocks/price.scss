@@ -38,6 +38,7 @@
   border: 2px solid $alt-primary-lighter;
   border-radius: 4px;
   appearance: none;
+  -moz-appearance: textfield;
 
   @media (min-width: $tablet-width) {
     width: 87px;
@@ -46,6 +47,21 @@
   @media (min-width: $desktop-width) {
     width: 134px;
   }
+}
+
+.price__field:hover,
+.price__field:focus-visible {
+  border-color: $alt-primary-darker;
+}
+
+.price__field:active {
+  border-color: $base-primary;
+  outline: none;
+}
+
+.noui-base {
+  width: calc(100% - 25px);
+  right: -7px;
 }
 
 .noui-target {
@@ -67,12 +83,28 @@
   top: -10px;
 }
 
+.noui-horizontal .noui-handle:hover,
+.noui-horizontal .noui-handle:focus-visible {
+  border-color: $base-primary;
+}
+
+.noui-horizontal .noui-handle:hover::before,
+.noui-horizontal .noui-handle:focus-visible::before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #7859cf40;
+  top: 2px;
+  left: 2px;
+}
+
+.noui-horizontal .noui-handle:active::before {
+  display: block;
+  background-color: $base-primary;
+}
+
 .noui-handle::after,
 .noui-handle::before {
   display: none;
-}
-
-.noui-base {
-  width: calc(100% - 25px);
-  right: -7px;
 }

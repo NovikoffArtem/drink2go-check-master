@@ -16,12 +16,19 @@
   line-height: 24px;
   background-color: $base-white;
   position: relative;
+  padding: 8px;
 }
 
 .pagination__button--current {
   background-color: transparent;
   font-weight: 600;
   color: $base-black;
+}
+
+.pagination__button--current:hover {
+  background-color: transparent;
+  color: $base-black;
+  cursor: auto;
 }
 
 .pagination__arrow::after {
@@ -46,11 +53,16 @@
   transform: rotate(180deg) translate(50%, 50%);
 }
 
+.pagination__arrow:hover::after {
+  background-color: $base-white;
+}
+
 .pagination__tablet {
   display: none;
 
   @media (min-width: $tablet-width) {
-    padding: 8px 14px;
+    padding: 0 12px;
+
     display: block;
   }
 }
